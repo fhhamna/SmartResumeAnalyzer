@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Virtual environments
+.venv/
+
+
+# Node.js
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db

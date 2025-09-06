@@ -1,0 +1,278 @@
+/* Navbar.css */
+
+.bg {
+  position: relative;
+  overflow: hidden; /* Ensures pseudo elements don’t leak out */
+}
+
+/* Dots in top-right corner */
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  height: 300px;
+  background-image: radial-gradient(gray 2px, transparent 2px);
+  background-size: 20px 20px; /* spacing between dots */
+  opacity: 0.2;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+
+
+.navbar {
+  background: #ffffff;
+  height: 120px;
+}
+
+
+.navbar .nav-link {
+  font-size: 18px;    
+  color: #000000;  
+  margin-left: 90px;
+}
+
+.navbar.nav-link hover {
+  color: #290374; 
+  transition: 0.3s;
+}
+
+
+.logo{
+    height: 120px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+
+.btn-1{
+  color: #363636; 
+  border: 2px #1d2B4c; 
+  background-color: transparent; 
+  padding: 8px 25px;
+  border-radius: 6px; 
+  border-color: #363636;
+  border: 2px solid #363636;
+  font-size: 18px;
+  transition: all 0.3s ease; 
+  margin-top: -12px;
+  margin-left: 100px;
+  margin-right: 22px;
+
+}
+
+.btn-1:hover {
+  background-color: #1d2B4c; /* purple background */
+  color: #ffffff; /* white text */
+  border: 2px solid #1d2B4c;
+}
+
+.containCr {
+  display: flex;
+  align-items: center;      
+  justify-content: space-between; 
+  gap: 2rem;                
+}
+
+.textBox {
+  flex: 1;            
+}
+
+.HRimage {
+  flex: 1;
+  max-width: 1500px;      
+  height: auto;
+  border-radius: 10px;     
+}
+
+.mb-4{
+  font-size: 27px;
+  color: #363636;
+  font:nunito;
+  margin-top: 30px;
+}
+.btn-logindb {
+  border: 2px solid #363636;
+  background: transparent;
+  color: #000000;
+  padding: 8px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.btn-logindb:hover {
+  background: #1d2B4c;
+  color: #fff;
+}
+
+/* SIGNUP BUTTON */
+.btn-signupdb {
+  background: #1d2B4c;
+  border: 2px solid #363636;
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-size: 18px;
+  margin-left:30px;
+}
+
+.btn-signupdb:hover{
+  background: #273a66;
+  color: #fff;
+}
+.lead{
+  font-size: 24px;
+  margin-bottom: 50px;
+  
+}
+.WhyChoose{
+  margin-top: 60px;
+}
+
+.container-why-choose-us p{
+  font-size: 20px;
+}
+
+.container-why-choose-us {
+  text-align: center;
+  padding: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.why-box {
+  display: flex; 
+  align-items: center;  
+  gap: 15px;   
+  border: 2px solid #f9f9f9;  
+  border-radius: 12px;     
+  margin: 10px 0;          
+  border-color: #363636; 
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.why-box:hover, .why-box-mid:hover {
+  transform: translateY(-5px);
+}
+
+.why-box i, .why-box-mid i {
+  font-size: 40px;
+  color: #1d2B4c;
+  margin-bottom: 10px;
+  display: block;
+}
+.why-box h2, .why-box-mid h2{
+  font-size: 25px;
+}
+
+.why-box-mid{
+  display: flex;           /* align icon and text horizontally */
+  align-items: center;     /* vertically center icon and text */
+  gap: 15=px;           /* some padding around the box */
+  border: 2px solid #f9f9f9;  /* optional border */
+  border-radius: 12px;     /* rounded corners */
+  margin: 10px 0;          /* spacing between boxes */
+  border-color: #363636; 
+  padding: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.how-it-works {
+  text-align: center;
+  padding: 60px;
+  background: #fafafa;
+}
+.how-it-works h1 {
+  text-align: center;
+  padding: 30px;
+  background: #fafafa;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 220px;
+  transition: transform 0.3s ease;
+  border: 2px solid black;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1d2B4c;
+  display: block;
+}
+
+
+.faq-item {
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 12px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.footer{
+  background-color: #fafafa;
+  height: 220px;
+  margin-top: 100px;
+}
+.footer-logo {/* keep aspect ratio */
+  display: block; 
+  margin-left: -90px;
+}
+
+.footer a:hover {
+  color: #1d2B4c;
+  transition: 0.3s;
+}
+.footer-social i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.footer-social i:hover {
+  color: #1d2B4c;
+  transition: 0.3s;
+}
+
+.footer-links{
+  color: #000;
+  margin-left: 90px;
+  margin-bottom: 70px;
+}
