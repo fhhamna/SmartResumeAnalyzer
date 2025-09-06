@@ -35,5 +35,5 @@ Recruiters often spend significant time manually screening resumes, which can be
 
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/your-username/smart-resume-analyzer.git
-cd smart-resume-analyzer
+git clone https://github.com/your-username/SmartResumeAnalyzer.git
+cd SmartResumeAnalyzer
