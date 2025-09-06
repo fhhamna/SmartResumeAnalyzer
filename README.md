@@ -23,17 +23,76 @@ Recruiters often spend significant time manually screening resumes, which can be
 
 ## Technology Stack
 
-**Frontend:** React.js, Bootstrap  
-**Backend:** Flask, Python  
-**Database:** MySQL  
-**NLP & ML:** spaCy, PyMuPDF, SentenceTransformer (MiniLM)  
-**Others:** Axios, Flask-CORS  
+- **Frontend:** React.js, Tailwind CSS 
+- **Backend:** Flask, Python  
+- **Database:** MySQL  
+- **NLP & ML:** spaCy, PyMuPDF, SentenceTransformer (MiniLM)  
+- **Others:** Axios, Flask-CORS  
 
 ---
 
 ## Installation
 
-1. **Clone the repository**  
+### 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/SmartResumeAnalyzer.git
 cd SmartResumeAnalyzer
+2. Backend Setup
+bash
+Copy code
+cd backend
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+3. Frontend Setup
+bash
+Copy code
+cd frontend
+npm install
+npm start
+4. Database Setup
+Create a MySQL database named resume_analyzer
+
+Import database.sql from the backend folder
+```
+## Usage
+
+1. Open the app in your browser: [http://localhost:3000](http://localhost:3000)
+2. Sign up or log in as a recruiter.
+3. Upload resumes in PDF format.
+4. View parsing results, match scores, and take actions on candidates.
+5. Monitor overall statistics through the dashboard.
+
+## Folder Structure
+
+```plaintext
+SmartResumeAnalyzer/
+│
+├── backend/           # Flask backend
+│   ├── app.py
+│   └── db.py
+│
+├── frontend/          # React frontend
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+└── README.md
+```
+## Future Improvements
+
+- Improve parsing accuracy with advanced NLP/ML models
+- Enterprise-level deployment and cloud integration
+- Enhanced recruiter analytics
+
+---
+
+
+## Contact
+
+**Developer:** Fazlul Humaid Hamna  
+**Email:** [hamnahumaid@gmail.com]
