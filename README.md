@@ -1,30 +1,39 @@
-**Project Overview**
+# Smart Resume Analyzer
 
-Recruiters often spend hours manually reviewing resumes, which can be time-consuming, error-prone, and inconsistent. The Smart Resume Analyzer is an AI-driven web application designed to automate the process of screening resumes and matching them with job descriptions.
-Using Natural Language Processing (NLP), the system extracts key information from resumes, scores candidates based on relevance to job requirements, and provides recruiters with a dashboard for streamlined decision-making.
+A web-based AI-driven application that automates resume parsing, job description matching, and candidate evaluation to support recruiters in hiring decisions. Built with **React**, **Flask**, **MySQL**, and **Natural Language Processing (NLP)**.
 
-Features
+---
 
-Upload resumes in PDF format for automatic parsing
+## Project Overview
 
-Extract and analyze skills, education, and experience
+Recruiters often spend significant time manually screening resumes, which can be inefficient and prone to errors. The Smart Resume Analyzer automates this process by extracting skills, education, and experience from resumes, then matching candidates to job descriptions using AI and NLP techniques. It provides a dashboard for recruiters to visualize data and make informed decisions.
 
-Match resumes with job descriptions using AI-driven scoring
+---
 
-Highlight top candidates for recruiters
+## Features
 
-Interactive dashboard with data visualization
+- Upload resumes in PDF or TXT format.  
+- Automatic extraction of **skills, education, and work experience** using NLP.  
+- Match resumes against job descriptions and generate **match scores**.  
+- Recruiter dashboard with **action buttons** to Accept, Reject, or Waitlist candidates.  
+- Data visualization of application metrics and candidate status.  
+- Chatbot-style tips for recruiter guidance.  
 
-Action buttons for recruiter decisions (Accept, Reject, Waitlist)
+---
 
-Chatbot-style tips to guide recruiters
+## Technology Stack
 
-Technology Stack
+**Frontend:** React.js, Bootstrap  
+**Backend:** Flask, Python  
+**Database:** MySQL  
+**NLP & ML:** spaCy, PyMuPDF, SentenceTransformer (MiniLM)  
+**Others:** Axios, Flask-CORS  
 
-Frontend: React.js
-Backend: Flask (Python)
-Database: MySQL
-NLP Libraries: spaCy, PyMuPDF
-Visualization: Chart.js / React Charts
-Authentication: JWT-based login and signup
+---
 
+## Installation
+
+1. **Clone the repository**  
+```bash
+git clone https://github.com/your-username/smart-resume-analyzer.git
+cd smart-resume-analyzer
